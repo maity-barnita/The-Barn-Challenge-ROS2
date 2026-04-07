@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d6373ba84c58a4722878.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "jackal_helper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_jackal_helper_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_jackal_helper_egg-65387e10bbd1818870dc.json",
+					"name" : "ament_cmake_python_build_jackal_helper_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_jackal_helper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_jackal_helper-1076fbd8996f04a33efe.json",
+					"name" : "ament_cmake_python_symlink_jackal_helper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "jackal_helper_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jackal_helper_uninstall-23271abd89c2f0426ec1.json",
+					"name" : "jackal_helper_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c3d4186f261eaa03e3ea.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper",
+		"source" : "/jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

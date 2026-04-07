@@ -1,0 +1,47 @@
+Bootstrap: localimage
+From: /home/boni/The-Barn-Challenge-Ros2/nav_competition_image.sif
+
+# =============================================================================
+# BARN Challenge — Singularityfile.def
+# =============================================================================
+# Uses nav_competition_image.sif as base (has everything pre-installed)
+# Copies YOUR modified files into container
+# Builds YOUR code so barn_controller is in /jackal_ws/install/
+# =============================================================================
+
+# create workspace folder
+%setup
+    mkdir -p ${SINGULARITY_ROOTFS}/jackal_ws/src/The-Barn-Challenge-Ros2
+
+# copy YOUR files into container
+%files
+    jackal_helper /jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper
+    res /jackal_ws/src/The-Barn-Challenge-Ros2/res
+    test.sh /jackal_ws/src/The-Barn-Challenge-Ros2/test.sh
+    report_test.py /jackal_ws/src/The-Barn-Challenge-Ros2/report_test.py
+    entrypoint.sh /jackal_ws/src/The-Barn-Challenge-Ros2/entrypoint.sh
+
+# build YOUR code inside container
+# /jackal_ws/install/ is WRITABLE during build
+%post -c /bin/bash
+    # source ROS2
+    source /opt/ros/jazzy/setup.bash
+
+    # build YOUR jackal_helper package
+    # this installs barn_controller.py to /jackal_ws/install/
+    cd /jackal_ws
+    colcon build \
+        --symlink-install \
+        --packages-select jackal_helper \
+        --base-paths src/The-Barn-Challenge-Ros2
+
+    # source built workspace
+    source /jackal_ws/install/local_setup.bash
+
+    echo "✅ barn_controller installed successfully!"
+    ls /jackal_ws/install/jackal_helper/lib/jackal_helper/
+
+# setup environment every time container runs
+%environment
+    source /opt/ros/jazzy/setup.bash
+    source /jackal_ws/install/local_setup.bash

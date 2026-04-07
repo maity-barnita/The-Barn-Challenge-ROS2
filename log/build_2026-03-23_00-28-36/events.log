@@ -1,0 +1,898 @@
+[0.000000] (-) TimerEvent: {}
+[0.000314] (jackal_helper) JobQueued: {'identifier': 'jackal_helper', 'dependencies': OrderedDict()}
+[0.002439] (jackal_helper) JobStarted: {'identifier': 'jackal_helper'}
+[0.032030] (jackal_helper) JobProgress: {'identifier': 'jackal_helper', 'progress': 'cmake'}
+[0.032738] (jackal_helper) Command: {'cmd': ['/usr/bin/cmake', '/jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper'], 'cwd': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'boni', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/.singularity.d/libs', 'HOME': '/home/boni', 'OLDPWD': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'USER_PATH': '/usr/local/go/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/boni/venv-ardupilot/bin:/home/boni/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3179', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/boni/turtlebot3_ws/install:/jackal_ws/install', 'ROS_DISTRO': 'jazzy', 'SINGULARITY_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LOGNAME': 'boni', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'boni', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/go/bin:/home/boni/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/Bonis-System:@/tmp/.ICE-unix/3133,unix/Bonis-System:/tmp/.ICE-unix/3133', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2fcd3f43_9621_4d62_9d7e_89a8847472b3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'SINGULARITY_COMMAND': 'exec', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_example:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VIRTUAL_ENV': '/home/boni/venv-ardupilot', 'SINGULARITY_CONTAINER': '/home/boni/The-Barn-Challenge-Ros2/nav_competition_image.sif', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'SINGULARITY_BIND': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2:/jackal_ws/src/The-Barn-Challenge-Ros2', 'PWD': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/jackal_ws/install/jackal_helper/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'SINGULARITY_NAME': 'nav_competition_image.sif', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy'}), 'shell': False}
+[0.099779] (-) TimerEvent: {}
+[0.200083] (-) TimerEvent: {}
+[0.300422] (-) TimerEvent: {}
+[0.402706] (-) TimerEvent: {}
+[0.503104] (-) TimerEvent: {}
+[0.542926] (jackal_helper) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.603761] (-) TimerEvent: {}
+[0.704081] (-) TimerEvent: {}
+[0.805135] (-) TimerEvent: {}
+[0.876078] (jackal_helper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.905282] (-) TimerEvent: {}
+[0.929813] (jackal_helper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.006631] (-) TimerEvent: {}
+[1.106972] (-) TimerEvent: {}
+[1.139592] (jackal_helper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.152536] (jackal_helper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.153127] (jackal_helper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.154100] (jackal_helper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.177386] (jackal_helper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.207093] (-) TimerEvent: {}
+[1.307442] (-) TimerEvent: {}
+[1.369755] (jackal_helper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.381756] (jackal_helper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.382161] (jackal_helper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.382888] (jackal_helper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.408500] (-) TimerEvent: {}
+[1.415770] (jackal_helper) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.508599] (-) TimerEvent: {}
+[1.608937] (-) TimerEvent: {}
+[1.686529] (jackal_helper) StdoutLine: {'line': b'-- Found Python3: /home/boni/venv-ardupilot/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.709018] (-) TimerEvent: {}
+[1.809263] (-) TimerEvent: {}
+[1.815595] (jackal_helper) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.909373] (-) TimerEvent: {}
+[2.009706] (-) TimerEvent: {}
+[2.072583] (jackal_helper) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.109803] (-) TimerEvent: {}
+[2.210162] (-) TimerEvent: {}
+[2.282428] (jackal_helper) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.310296] (-) TimerEvent: {}
+[2.363261] (jackal_helper) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.410402] (-) TimerEvent: {}
+[2.450676] (jackal_helper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.510509] (-) TimerEvent: {}
+[2.528730] (jackal_helper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.610608] (-) TimerEvent: {}
+[2.710931] (-) TimerEvent: {}
+[2.811326] (-) TimerEvent: {}
+[2.840557] (jackal_helper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.861223] (jackal_helper) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.911452] (-) TimerEvent: {}
+[3.016556] (-) TimerEvent: {}
+[3.116846] (-) TimerEvent: {}
+[3.164590] (jackal_helper) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.206584] (jackal_helper) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.218754] (-) TimerEvent: {}
+[3.250946] (jackal_helper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.318872] (-) TimerEvent: {}
+[3.419178] (-) TimerEvent: {}
+[3.505184] (jackal_helper) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[3.519290] (-) TimerEvent: {}
+[3.521169] (jackal_helper) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[3.564099] (jackal_helper) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.619433] (-) TimerEvent: {}
+[3.672149] (jackal_helper) StdoutLine: {'line': b'-- Found ros_gz_interfaces: 1.0.18 (/opt/ros/jazzy/share/ros_gz_interfaces/cmake)\n'}
+[3.719494] (-) TimerEvent: {}
+[3.820470] (-) TimerEvent: {}
+[3.920787] (-) TimerEvent: {}
+[4.021106] (-) TimerEvent: {}
+[4.098302] (jackal_helper) StdoutLine: {'line': b'-- Configuring done (3.9s)\n'}
+[4.108458] (jackal_helper) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.112278] (jackal_helper) StdoutLine: {'line': b'-- Build files have been written to: /jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper\n'}
+[4.121212] (-) TimerEvent: {}
+[4.127213] (jackal_helper) CommandEnded: {'returncode': 0}
+[4.128027] (jackal_helper) JobProgress: {'identifier': 'jackal_helper', 'progress': 'build'}
+[4.129083] (jackal_helper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', '--', '-j16', '-l16'], 'cwd': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'boni', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/.singularity.d/libs', 'HOME': '/home/boni', 'OLDPWD': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'USER_PATH': '/usr/local/go/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/boni/venv-ardupilot/bin:/home/boni/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3179', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/boni/turtlebot3_ws/install:/jackal_ws/install', 'ROS_DISTRO': 'jazzy', 'SINGULARITY_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LOGNAME': 'boni', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'boni', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/go/bin:/home/boni/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/Bonis-System:@/tmp/.ICE-unix/3133,unix/Bonis-System:/tmp/.ICE-unix/3133', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2fcd3f43_9621_4d62_9d7e_89a8847472b3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'SINGULARITY_COMMAND': 'exec', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_example:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VIRTUAL_ENV': '/home/boni/venv-ardupilot', 'SINGULARITY_CONTAINER': '/home/boni/The-Barn-Challenge-Ros2/nav_competition_image.sif', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'SINGULARITY_BIND': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2:/jackal_ws/src/The-Barn-Challenge-Ros2', 'PWD': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/jackal_ws/install/jackal_helper/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'SINGULARITY_NAME': 'nav_competition_image.sif', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy'}), 'shell': False}
+[4.221347] (-) TimerEvent: {}
+[4.253556] (jackal_helper) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_jackal_helper\n'}
+[4.321454] (-) TimerEvent: {}
+[4.421811] (-) TimerEvent: {}
+[4.522087] (-) TimerEvent: {}
+[4.625548] (-) TimerEvent: {}
+[4.662272] (jackal_helper) StdoutLine: {'line': b'running egg_info\n'}
+[4.694017] (jackal_helper) StdoutLine: {'line': b'creating jackal_helper.egg-info\n'}
+[4.694231] (jackal_helper) StdoutLine: {'line': b'writing jackal_helper.egg-info/PKG-INFO\n'}
+[4.694766] (jackal_helper) StdoutLine: {'line': b'writing dependency_links to jackal_helper.egg-info/dependency_links.txt\n'}
+[4.695000] (jackal_helper) StdoutLine: {'line': b'writing top-level names to jackal_helper.egg-info/top_level.txt\n'}
+[4.695234] (jackal_helper) StdoutLine: {'line': b"writing manifest file 'jackal_helper.egg-info/SOURCES.txt'\n"}
+[4.725638] (-) TimerEvent: {}
+[4.786942] (jackal_helper) StdoutLine: {'line': b"reading manifest file 'jackal_helper.egg-info/SOURCES.txt'\n"}
+[4.787805] (jackal_helper) StdoutLine: {'line': b"writing manifest file 'jackal_helper.egg-info/SOURCES.txt'\n"}
+[4.825765] (-) TimerEvent: {}
+[4.852572] (jackal_helper) StdoutLine: {'line': b'Built target ament_cmake_python_build_jackal_helper_egg\n'}
+[4.876451] (jackal_helper) CommandEnded: {'returncode': 0}
+[4.877154] (jackal_helper) JobProgress: {'identifier': 'jackal_helper', 'progress': 'install'}
+[4.897308] (jackal_helper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper'], 'cwd': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'boni', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/.singularity.d/libs', 'HOME': '/home/boni', 'OLDPWD': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'USER_PATH': '/usr/local/go/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/boni/venv-ardupilot/bin:/home/boni/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3179', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/boni/turtlebot3_ws/install:/jackal_ws/install', 'ROS_DISTRO': 'jazzy', 'SINGULARITY_ENVIRONMENT': '/.singularity.d/env/91-environment.sh', 'LOGNAME': 'boni', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'boni', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/go/bin:/home/boni/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/Bonis-System:@/tmp/.ICE-unix/3133,unix/Bonis-System:/tmp/.ICE-unix/3133', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2fcd3f43_9621_4d62_9d7e_89a8847472b3', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(venv-ardupilot)', 'SINGULARITY_COMMAND': 'exec', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_example:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VIRTUAL_ENV': '/home/boni/venv-ardupilot', 'SINGULARITY_CONTAINER': '/home/boni/The-Barn-Challenge-Ros2/nav_competition_image.sif', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'SINGULARITY_BIND': '/home/boni/jackal_ws/src/The-Barn-Challenge-Ros2:/jackal_ws/src/The-Barn-Challenge-Ros2', 'PWD': '/jackal_ws/src/The-Barn-Challenge-Ros2/build/jackal_helper', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/jackal_ws/install/jackal_helper/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_example/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/boni/turtlebot3_ws/install/dynamixel_sdk/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'SINGULARITY_NAME': 'nav_competition_image.sif', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/jackal_ws/install/jackal_helper:/home/boni/turtlebot3_ws/install/turtlebot3:/home/boni/turtlebot3_ws/install/turtlebot3_bringup:/home/boni/turtlebot3_ws/install/turtlebot3_node:/home/boni/turtlebot3_ws/install/turtlebot3_navigation2:/home/boni/turtlebot3_ws/install/turtlebot3_msgs:/home/boni/turtlebot3_ws/install/turtlebot3_description:/home/boni/turtlebot3_ws/install/turtlebot3_cartographer:/home/boni/turtlebot3_ws/install/dynamixel_sdk_examples:/home/boni/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/boni/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/boni/turtlebot3_ws/install/turtlebot3_teleop:/home/boni/turtlebot3_ws/install/turtlebot3_example:/opt/ros/jazzy'}), 'shell': False}
+[4.915455] (jackal_helper) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.915691] (jackal_helper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.915876] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/pythonpath.sh\n'}
+[4.925899] (-) TimerEvent: {}
+[4.938841] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/pythonpath.dsv\n'}
+[4.957659] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[4.975881] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[4.995888] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.012817] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.027475] (-) TimerEvent: {}
+[5.030607] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/__init__.py\n'}
+[5.048241] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/barn_controller.py\n'}
+[5.064959] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/utils.py\n'}
+[5.083369] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/jackal_helper/gazebo_simulation.py\n'}
+[5.100254] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/jackal_helper/barn_runner.py\n'}
+[5.118102] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/jackal_helper/barn_controller.py\n'}
+[5.127593] (-) TimerEvent: {}
+[5.137694] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/gui.config\n'}
+[5.155754] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/manipulators/config/moveit.yaml\n'}
+[5.174941] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/manipulators/launch/manipulators-service.launch.py\n'}
+[5.198855] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/nav2.yaml\n'}
+[5.217331] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/control.yaml\n'}
+[5.229649] (-) TimerEvent: {}
+[5.232269] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/diagnostic_aggregator.yaml\n'}
+[5.252339] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/diagnostic_updater.yaml\n'}
+[5.269393] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/foxglove_bridge.yaml\n'}
+[5.287556] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/imu_filter.yaml\n'}
+[5.308875] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/localization.yaml\n'}
+[5.326645] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/teleop_interactive_markers.yaml\n'}
+[5.329798] (-) TimerEvent: {}
+[5.349653] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/teleop_joy.yaml\n'}
+[5.370549] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/config/twist_mux.yaml\n'}
+[5.389015] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/launch/__pycache__/platform-service.launch.cpython-312.pyc\n'}
+[5.406803] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/platform/launch/platform-service.launch.py\n'}
+[5.423615] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/robot.srdf\n'}
+[5.429924] (-) TimerEvent: {}
+[5.442286] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/robot.srdf.xacro\n'}
+[5.459977] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/robot.urdf.xacro\n'}
+[5.478629] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/robot.yaml\n'}
+[5.496320] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/config/gps_0.yaml\n'}
+[5.514041] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/config/imu_0.yaml\n'}
+[5.530024] (-) TimerEvent: {}
+[5.530547] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/config/lidar2d_0.yaml\n'}
+[5.548842] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/config/lidar2d_1.yaml\n'}
+[5.574154] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/config/lidar3d_0.yaml\n'}
+[5.592566] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/__pycache__/lidar2d_0.launch.cpython-312.pyc\n'}
+[5.609864] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/__pycache__/lidar2d_1.launch.cpython-312.pyc\n'}
+[5.629485] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/__pycache__/lidar3d_0.launch.cpython-312.pyc\n'}
+[5.630096] (-) TimerEvent: {}
+[5.647539] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/__pycache__/sensors-service.launch.cpython-312.pyc\n'}
+[5.668239] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/lidar2d_0.launch.py\n'}
+[5.686528] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/lidar2d_1.launch.py\n'}
+[5.704900] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/lidar3d_0.launch.py\n'}
+[5.726346] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/config/sensors/launch/sensors-service.launch.py\n'}
+[5.730207] (-) TimerEvent: {}
+[5.741601] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/launch/BARN_runner.launch.py\n'}
+[5.759258] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/launch/__pycache__/BARN_runner.launch.cpython-312.pyc\n'}
+[5.781138] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/launch/nav2_bringup.launch.py\n'}
+[5.814789] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_0.npy\n'}
+[5.830575] (-) TimerEvent: {}
+[5.834563] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_1.npy\n'}
+[5.853055] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_10.npy\n'}
+[5.871929] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_100.npy\n'}
+[5.890611] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_101.npy\n'}
+[5.909587] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_102.npy\n'}
+[5.928950] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_103.npy\n'}
+[5.930650] (-) TimerEvent: {}
+[5.950611] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_104.npy\n'}
+[5.968851] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_105.npy\n'}
+[5.985590] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_106.npy\n'}
+[6.003402] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_107.npy\n'}
+[6.022854] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_108.npy\n'}
+[6.030756] (-) TimerEvent: {}
+[6.041368] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_109.npy\n'}
+[6.059025] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_11.npy\n'}
+[6.077213] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_110.npy\n'}
+[6.095185] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_111.npy\n'}
+[6.114047] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_112.npy\n'}
+[6.129925] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_113.npy\n'}
+[6.130821] (-) TimerEvent: {}
+[6.150009] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_114.npy\n'}
+[6.168939] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_115.npy\n'}
+[6.184343] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_116.npy\n'}
+[6.201941] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_117.npy\n'}
+[6.221787] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_118.npy\n'}
+[6.231455] (-) TimerEvent: {}
+[6.239328] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_119.npy\n'}
+[6.257810] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_12.npy\n'}
+[6.277511] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_120.npy\n'}
+[6.295096] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_121.npy\n'}
+[6.318591] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_122.npy\n'}
+[6.331574] (-) TimerEvent: {}
+[6.332564] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_123.npy\n'}
+[6.350644] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_124.npy\n'}
+[6.369736] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_125.npy\n'}
+[6.387821] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_126.npy\n'}
+[6.405081] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_127.npy\n'}
+[6.420440] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_128.npy\n'}
+[6.432500] (-) TimerEvent: {}
+[6.439460] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_129.npy\n'}
+[6.456591] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_13.npy\n'}
+[6.478617] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_130.npy\n'}
+[6.497955] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_131.npy\n'}
+[6.515869] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_132.npy\n'}
+[6.532616] (-) TimerEvent: {}
+[6.535148] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_133.npy\n'}
+[6.556658] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_134.npy\n'}
+[6.574514] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_135.npy\n'}
+[6.593665] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_136.npy\n'}
+[6.613858] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_137.npy\n'}
+[6.631798] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_138.npy\n'}
+[6.632695] (-) TimerEvent: {}
+[6.650843] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_139.npy\n'}
+[6.667056] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_14.npy\n'}
+[6.684214] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_140.npy\n'}
+[6.703367] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_141.npy\n'}
+[6.722336] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_142.npy\n'}
+[6.732854] (-) TimerEvent: {}
+[6.742320] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_143.npy\n'}
+[6.761681] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_144.npy\n'}
+[6.779730] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_145.npy\n'}
+[6.802495] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_146.npy\n'}
+[6.823764] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_147.npy\n'}
+[6.832960] (-) TimerEvent: {}
+[6.842647] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_148.npy\n'}
+[6.859486] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_149.npy\n'}
+[6.878572] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_15.npy\n'}
+[6.897674] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_150.npy\n'}
+[6.916562] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_151.npy\n'}
+[6.933087] (-) TimerEvent: {}
+[6.936325] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_152.npy\n'}
+[6.957681] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_153.npy\n'}
+[6.977108] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_154.npy\n'}
+[6.996768] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_155.npy\n'}
+[7.014838] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_156.npy\n'}
+[7.032117] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_157.npy\n'}
+[7.033161] (-) TimerEvent: {}
+[7.051158] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_158.npy\n'}
+[7.066358] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_159.npy\n'}
+[7.085594] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_16.npy\n'}
+[7.103515] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_160.npy\n'}
+[7.120556] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_161.npy\n'}
+[7.134483] (-) TimerEvent: {}
+[7.139391] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_162.npy\n'}
+[7.157059] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_163.npy\n'}
+[7.175649] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_164.npy\n'}
+[7.194534] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_165.npy\n'}
+[7.213950] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_166.npy\n'}
+[7.231526] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_167.npy\n'}
+[7.234560] (-) TimerEvent: {}
+[7.251708] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_168.npy\n'}
+[7.269168] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_169.npy\n'}
+[7.287181] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_17.npy\n'}
+[7.306573] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_170.npy\n'}
+[7.322929] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_171.npy\n'}
+[7.334679] (-) TimerEvent: {}
+[7.340206] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_172.npy\n'}
+[7.359093] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_173.npy\n'}
+[7.378081] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_174.npy\n'}
+[7.396777] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_175.npy\n'}
+[7.419305] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_176.npy\n'}
+[7.434785] (-) TimerEvent: {}
+[7.437015] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_177.npy\n'}
+[7.457967] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_178.npy\n'}
+[7.478998] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_179.npy\n'}
+[7.498005] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_18.npy\n'}
+[7.514269] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_180.npy\n'}
+[7.532576] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_181.npy\n'}
+[7.534871] (-) TimerEvent: {}
+[7.552555] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_182.npy\n'}
+[7.570071] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_183.npy\n'}
+[7.589577] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_184.npy\n'}
+[7.609005] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_185.npy\n'}
+[7.628060] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_186.npy\n'}
+[7.635908] (-) TimerEvent: {}
+[7.647897] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_187.npy\n'}
+[7.664940] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_188.npy\n'}
+[7.684545] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_189.npy\n'}
+[7.701988] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_19.npy\n'}
+[7.720775] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_190.npy\n'}
+[7.736007] (-) TimerEvent: {}
+[7.740090] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_191.npy\n'}
+[7.759476] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_192.npy\n'}
+[7.778574] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_193.npy\n'}
+[7.797873] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_194.npy\n'}
+[7.815718] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_195.npy\n'}
+[7.835767] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_196.npy\n'}
+[7.836019] (-) TimerEvent: {}
+[7.855589] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_197.npy\n'}
+[7.874236] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_198.npy\n'}
+[7.891972] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_199.npy\n'}
+[7.912758] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_2.npy\n'}
+[7.931134] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_20.npy\n'}
+[7.936145] (-) TimerEvent: {}
+[7.950371] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_200.npy\n'}
+[7.972793] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_201.npy\n'}
+[7.993742] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_202.npy\n'}
+[8.010654] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_203.npy\n'}
+[8.027731] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_204.npy\n'}
+[8.036283] (-) TimerEvent: {}
+[8.047805] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_205.npy\n'}
+[8.064738] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_206.npy\n'}
+[8.083456] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_207.npy\n'}
+[8.099557] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_208.npy\n'}
+[8.115994] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_209.npy\n'}
+[8.134536] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_21.npy\n'}
+[8.136350] (-) TimerEvent: {}
+[8.151185] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_210.npy\n'}
+[8.168025] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_211.npy\n'}
+[8.185251] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_212.npy\n'}
+[8.203097] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_213.npy\n'}
+[8.221584] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_214.npy\n'}
+[8.236924] (-) TimerEvent: {}
+[8.240079] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_215.npy\n'}
+[8.258660] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_216.npy\n'}
+[8.277763] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_217.npy\n'}
+[8.296501] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_218.npy\n'}
+[8.314346] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_219.npy\n'}
+[8.332756] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_22.npy\n'}
+[8.336951] (-) TimerEvent: {}
+[8.352478] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_220.npy\n'}
+[8.368121] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_221.npy\n'}
+[8.386343] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_222.npy\n'}
+[8.402085] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_223.npy\n'}
+[8.418796] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_224.npy\n'}
+[8.436919] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_225.npy\n'}
+[8.437180] (-) TimerEvent: {}
+[8.458211] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_226.npy\n'}
+[8.476324] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_227.npy\n'}
+[8.494514] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_228.npy\n'}
+[8.513818] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_229.npy\n'}
+[8.530488] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_23.npy\n'}
+[8.537337] (-) TimerEvent: {}
+[8.548185] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_230.npy\n'}
+[8.569695] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_231.npy\n'}
+[8.586656] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_232.npy\n'}
+[8.605032] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_233.npy\n'}
+[8.627311] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_234.npy\n'}
+[8.637465] (-) TimerEvent: {}
+[8.644172] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_235.npy\n'}
+[8.667157] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_236.npy\n'}
+[8.688897] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_237.npy\n'}
+[8.708688] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_238.npy\n'}
+[8.727456] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_239.npy\n'}
+[8.738498] (-) TimerEvent: {}
+[8.746904] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_24.npy\n'}
+[8.764476] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_240.npy\n'}
+[8.782977] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_241.npy\n'}
+[8.804845] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_242.npy\n'}
+[8.822344] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_243.npy\n'}
+[8.839478] (-) TimerEvent: {}
+[8.840061] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_244.npy\n'}
+[8.858743] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_245.npy\n'}
+[8.877224] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_246.npy\n'}
+[8.895538] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_247.npy\n'}
+[8.913273] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_248.npy\n'}
+[8.934281] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_249.npy\n'}
+[8.939619] (-) TimerEvent: {}
+[8.953466] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_25.npy\n'}
+[8.975953] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_250.npy\n'}
+[8.992805] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_251.npy\n'}
+[9.010129] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_252.npy\n'}
+[9.027328] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_253.npy\n'}
+[9.040169] (-) TimerEvent: {}
+[9.045817] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_254.npy\n'}
+[9.064544] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_255.npy\n'}
+[9.079863] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_256.npy\n'}
+[9.096476] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_257.npy\n'}
+[9.115505] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_258.npy\n'}
+[9.131779] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_259.npy\n'}
+[9.140298] (-) TimerEvent: {}
+[9.150987] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_26.npy\n'}
+[9.168559] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_260.npy\n'}
+[9.186372] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_261.npy\n'}
+[9.210538] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_262.npy\n'}
+[9.230225] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_263.npy\n'}
+[9.240447] (-) TimerEvent: {}
+[9.248101] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_264.npy\n'}
+[9.268539] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_265.npy\n'}
+[9.284745] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_266.npy\n'}
+[9.302243] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_267.npy\n'}
+[9.322934] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_268.npy\n'}
+[9.339892] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_269.npy\n'}
+[9.340434] (-) TimerEvent: {}
+[9.358812] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_27.npy\n'}
+[9.378633] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_270.npy\n'}
+[9.395879] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_271.npy\n'}
+[9.415432] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_272.npy\n'}
+[9.435942] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_273.npy\n'}
+[9.440562] (-) TimerEvent: {}
+[9.452408] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_274.npy\n'}
+[9.471631] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_275.npy\n'}
+[9.490496] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_276.npy\n'}
+[9.507069] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_277.npy\n'}
+[9.526934] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_278.npy\n'}
+[9.540699] (-) TimerEvent: {}
+[9.546298] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_279.npy\n'}
+[9.565545] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_28.npy\n'}
+[9.583954] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_280.npy\n'}
+[9.602752] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_281.npy\n'}
+[9.621101] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_282.npy\n'}
+[9.639941] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_283.npy\n'}
+[9.640765] (-) TimerEvent: {}
+[9.659455] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_284.npy\n'}
+[9.677351] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_285.npy\n'}
+[9.696241] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_286.npy\n'}
+[9.715332] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_287.npy\n'}
+[9.733455] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_288.npy\n'}
+[9.741482] (-) TimerEvent: {}
+[9.753683] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_289.npy\n'}
+[9.771176] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_29.npy\n'}
+[9.788814] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_290.npy\n'}
+[9.809508] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_291.npy\n'}
+[9.828458] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_292.npy\n'}
+[9.841665] (-) TimerEvent: {}
+[9.847820] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_293.npy\n'}
+[9.868327] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_294.npy\n'}
+[9.887539] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_295.npy\n'}
+[9.910214] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_296.npy\n'}
+[9.931288] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_297.npy\n'}
+[9.941789] (-) TimerEvent: {}
+[9.949723] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_298.npy\n'}
+[9.968049] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_299.npy\n'}
+[9.986249] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_3.npy\n'}
+[10.003890] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_30.npy\n'}
+[10.021044] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_31.npy\n'}
+[10.038148] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_32.npy\n'}
+[10.041870] (-) TimerEvent: {}
+[10.055177] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_33.npy\n'}
+[10.071861] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_34.npy\n'}
+[10.091440] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_35.npy\n'}
+[10.107911] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_36.npy\n'}
+[10.125264] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_37.npy\n'}
+[10.141991] (-) TimerEvent: {}
+[10.143624] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_38.npy\n'}
+[10.161139] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_39.npy\n'}
+[10.179482] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_4.npy\n'}
+[10.196868] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_40.npy\n'}
+[10.213907] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_41.npy\n'}
+[10.232522] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_42.npy\n'}
+[10.242107] (-) TimerEvent: {}
+[10.254182] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_43.npy\n'}
+[10.270853] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_44.npy\n'}
+[10.289116] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_45.npy\n'}
+[10.308563] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_46.npy\n'}
+[10.326199] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_47.npy\n'}
+[10.342223] (-) TimerEvent: {}
+[10.344513] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_48.npy\n'}
+[10.368071] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_49.npy\n'}
+[10.384983] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_5.npy\n'}
+[10.402882] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_50.npy\n'}
+[10.421928] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_51.npy\n'}
+[10.438812] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_52.npy\n'}
+[10.443181] (-) TimerEvent: {}
+[10.458522] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_53.npy\n'}
+[10.477994] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_54.npy\n'}
+[10.494866] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_55.npy\n'}
+[10.513706] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_56.npy\n'}
+[10.533093] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_57.npy\n'}
+[10.543300] (-) TimerEvent: {}
+[10.552747] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_58.npy\n'}
+[10.576470] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_59.npy\n'}
+[10.595150] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_6.npy\n'}
+[10.613336] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_60.npy\n'}
+[10.630573] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_61.npy\n'}
+[10.643410] (-) TimerEvent: {}
+[10.647307] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_62.npy\n'}
+[10.665839] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_63.npy\n'}
+[10.685210] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_64.npy\n'}
+[10.701833] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_65.npy\n'}
+[10.720243] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_66.npy\n'}
+[10.740101] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_67.npy\n'}
+[10.743501] (-) TimerEvent: {}
+[10.757835] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_68.npy\n'}
+[10.776704] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_69.npy\n'}
+[10.796924] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_7.npy\n'}
+[10.814745] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_70.npy\n'}
+[10.832538] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_71.npy\n'}
+[10.843932] (-) TimerEvent: {}
+[10.850681] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_72.npy\n'}
+[10.868769] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_73.npy\n'}
+[10.887840] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_74.npy\n'}
+[10.911590] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_75.npy\n'}
+[10.927062] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_76.npy\n'}
+[10.944052] (-) TimerEvent: {}
+[10.945650] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_77.npy\n'}
+[10.965462] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_78.npy\n'}
+[10.982228] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_79.npy\n'}
+[11.000155] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_8.npy\n'}
+[11.017529] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_80.npy\n'}
+[11.036292] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_81.npy\n'}
+[11.044156] (-) TimerEvent: {}
+[11.054929] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_82.npy\n'}
+[11.071858] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_83.npy\n'}
+[11.087769] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_84.npy\n'}
+[11.105220] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_85.npy\n'}
+[11.122571] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_86.npy\n'}
+[11.143426] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_87.npy\n'}
+[11.144222] (-) TimerEvent: {}
+[11.161645] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_88.npy\n'}
+[11.182016] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_89.npy\n'}
+[11.200188] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_9.npy\n'}
+[11.219191] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_90.npy\n'}
+[11.238721] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_91.npy\n'}
+[11.244357] (-) TimerEvent: {}
+[11.255069] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_92.npy\n'}
+[11.273634] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_93.npy\n'}
+[11.292944] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_94.npy\n'}
+[11.310530] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_95.npy\n'}
+[11.328447] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_96.npy\n'}
+[11.344516] (-) TimerEvent: {}
+[11.348080] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_97.npy\n'}
+[11.367639] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_98.npy\n'}
+[11.390772] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/path_files/path_99.npy\n'}
+[11.404325] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_0.world\n'}
+[11.422867] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_1.world\n'}
+[11.440310] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_10.world\n'}
+[11.445151] (-) TimerEvent: {}
+[11.462969] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_100.world\n'}
+[11.483343] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_101.world\n'}
+[11.504973] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_102.world\n'}
+[11.519629] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_103.world\n'}
+[11.537551] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_104.world\n'}
+[11.550489] (-) TimerEvent: {}
+[11.557163] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_105.world\n'}
+[11.573869] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_106.world\n'}
+[11.591028] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_107.world\n'}
+[11.609109] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_108.world\n'}
+[11.627527] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_109.world\n'}
+[11.646169] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_11.world\n'}
+[11.650603] (-) TimerEvent: {}
+[11.666479] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_110.world\n'}
+[11.685808] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_111.world\n'}
+[11.703639] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_112.world\n'}
+[11.723602] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_113.world\n'}
+[11.739220] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_114.world\n'}
+[11.750707] (-) TimerEvent: {}
+[11.762404] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_115.world\n'}
+[11.781841] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_116.world\n'}
+[11.799375] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_117.world\n'}
+[11.817531] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_118.world\n'}
+[11.837586] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_119.world\n'}
+[11.850813] (-) TimerEvent: {}
+[11.854454] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_12.world\n'}
+[11.874143] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_120.world\n'}
+[11.903217] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_121.world\n'}
+[11.923404] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_122.world\n'}
+[11.945541] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_123.world\n'}
+[11.950947] (-) TimerEvent: {}
+[11.963347] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_124.world\n'}
+[11.979525] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_125.world\n'}
+[11.997068] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_126.world\n'}
+[12.016732] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_127.world\n'}
+[12.034961] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_128.world\n'}
+[12.051478] (-) TimerEvent: {}
+[12.053537] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_129.world\n'}
+[12.071213] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_13.world\n'}
+[12.087813] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_130.world\n'}
+[12.105540] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_131.world\n'}
+[12.124062] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_132.world\n'}
+[12.141813] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_133.world\n'}
+[12.151584] (-) TimerEvent: {}
+[12.157884] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_134.world\n'}
+[12.175900] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_135.world\n'}
+[12.194237] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_136.world\n'}
+[12.213273] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_137.world\n'}
+[12.231448] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_138.world\n'}
+[12.249830] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_139.world\n'}
+[12.251653] (-) TimerEvent: {}
+[12.269566] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_14.world\n'}
+[12.286591] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_140.world\n'}
+[12.304054] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_141.world\n'}
+[12.322467] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_142.world\n'}
+[12.342152] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_143.world\n'}
+[12.351779] (-) TimerEvent: {}
+[12.361004] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_144.world\n'}
+[12.380121] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_145.world\n'}
+[12.398737] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_146.world\n'}
+[12.416692] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_147.world\n'}
+[12.436079] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_148.world\n'}
+[12.451899] (-) TimerEvent: {}
+[12.452319] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_149.world\n'}
+[12.470506] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_15.world\n'}
+[12.490419] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_150.world\n'}
+[12.507459] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_151.world\n'}
+[12.525429] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_152.world\n'}
+[12.546892] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_153.world\n'}
+[12.552037] (-) TimerEvent: {}
+[12.564645] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_154.world\n'}
+[12.586474] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_155.world\n'}
+[12.606395] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_156.world\n'}
+[12.622815] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_157.world\n'}
+[12.642625] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_158.world\n'}
+[12.652144] (-) TimerEvent: {}
+[12.660366] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_159.world\n'}
+[12.677743] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_16.world\n'}
+[12.698532] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_160.world\n'}
+[12.714951] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_161.world\n'}
+[12.731268] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_162.world\n'}
+[12.748908] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_163.world\n'}
+[12.752238] (-) TimerEvent: {}
+[12.766489] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_164.world\n'}
+[12.785059] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_165.world\n'}
+[12.802837] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_166.world\n'}
+[12.822182] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_167.world\n'}
+[12.842929] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_168.world\n'}
+[12.852354] (-) TimerEvent: {}
+[12.860967] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_169.world\n'}
+[12.883162] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_17.world\n'}
+[12.908480] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_170.world\n'}
+[12.927354] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_171.world\n'}
+[12.947840] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_172.world\n'}
+[12.953504] (-) TimerEvent: {}
+[12.969189] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_173.world\n'}
+[12.986313] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_174.world\n'}
+[13.004176] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_175.world\n'}
+[13.023852] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_176.world\n'}
+[13.043840] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_177.world\n'}
+[13.053619] (-) TimerEvent: {}
+[13.063579] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_178.world\n'}
+[13.082619] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_179.world\n'}
+[13.101496] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_18.world\n'}
+[13.119596] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_180.world\n'}
+[13.137900] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_181.world\n'}
+[13.153741] (-) TimerEvent: {}
+[13.154239] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_182.world\n'}
+[13.176584] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_183.world\n'}
+[13.193794] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_184.world\n'}
+[13.215375] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_185.world\n'}
+[13.243945] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_186.world\n'}
+[13.253858] (-) TimerEvent: {}
+[13.261738] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_187.world\n'}
+[13.281960] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_188.world\n'}
+[13.301341] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_189.world\n'}
+[13.320162] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_19.world\n'}
+[13.338195] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_190.world\n'}
+[13.354486] (-) TimerEvent: {}
+[13.358950] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_191.world\n'}
+[13.378498] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_192.world\n'}
+[13.396800] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_193.world\n'}
+[13.416465] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_194.world\n'}
+[13.434237] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_195.world\n'}
+[13.452220] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_196.world\n'}
+[13.454595] (-) TimerEvent: {}
+[13.470537] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_197.world\n'}
+[13.488771] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_198.world\n'}
+[13.506004] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_199.world\n'}
+[13.523372] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_2.world\n'}
+[13.543551] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_20.world\n'}
+[13.554705] (-) TimerEvent: {}
+[13.561658] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_200.world\n'}
+[13.582744] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_201.world\n'}
+[13.601225] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_202.world\n'}
+[13.618250] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_203.world\n'}
+[13.637583] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_204.world\n'}
+[13.654829] (-) TimerEvent: {}
+[13.657517] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_205.world\n'}
+[13.675588] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_206.world\n'}
+[13.694097] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_207.world\n'}
+[13.711401] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_208.world\n'}
+[13.730787] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_209.world\n'}
+[13.749968] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_21.world\n'}
+[13.756567] (-) TimerEvent: {}
+[13.767453] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_210.world\n'}
+[13.786943] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_211.world\n'}
+[13.807173] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_212.world\n'}
+[13.824538] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_213.world\n'}
+[13.842160] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_214.world\n'}
+[13.856667] (-) TimerEvent: {}
+[13.862046] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_215.world\n'}
+[13.881434] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_216.world\n'}
+[13.900344] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_217.world\n'}
+[13.923295] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_218.world\n'}
+[13.941213] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_219.world\n'}
+[13.956805] (-) TimerEvent: {}
+[13.961428] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_22.world\n'}
+[13.979104] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_220.world\n'}
+[13.996888] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_221.world\n'}
+[14.014662] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_222.world\n'}
+[14.034540] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_223.world\n'}
+[14.051235] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_224.world\n'}
+[14.056888] (-) TimerEvent: {}
+[14.069987] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_225.world\n'}
+[14.089691] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_226.world\n'}
+[14.103794] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_227.world\n'}
+[14.120324] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_228.world\n'}
+[14.140155] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_229.world\n'}
+[14.155327] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_23.world\n'}
+[14.157006] (-) TimerEvent: {}
+[14.172823] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_230.world\n'}
+[14.193129] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_231.world\n'}
+[14.214529] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_232.world\n'}
+[14.234450] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_233.world\n'}
+[14.256659] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_234.world\n'}
+[14.257087] (-) TimerEvent: {}
+[14.275141] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_235.world\n'}
+[14.293593] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_236.world\n'}
+[14.312262] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_237.world\n'}
+[14.330942] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_238.world\n'}
+[14.349335] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_239.world\n'}
+[14.357262] (-) TimerEvent: {}
+[14.368020] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_24.world\n'}
+[14.388257] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_240.world\n'}
+[14.406836] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_241.world\n'}
+[14.424635] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_242.world\n'}
+[14.444601] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_243.world\n'}
+[14.457374] (-) TimerEvent: {}
+[14.464807] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_244.world\n'}
+[14.483501] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_245.world\n'}
+[14.501899] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_246.world\n'}
+[14.520991] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_247.world\n'}
+[14.537528] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_248.world\n'}
+[14.555067] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_249.world\n'}
+[14.557644] (-) TimerEvent: {}
+[14.573487] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_25.world\n'}
+[14.590786] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_250.world\n'}
+[14.607905] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_251.world\n'}
+[14.626205] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_252.world\n'}
+[14.646829] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_253.world\n'}
+[14.657786] (-) TimerEvent: {}
+[14.665886] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_254.world\n'}
+[14.687292] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_255.world\n'}
+[14.705774] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_256.world\n'}
+[14.723576] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_257.world\n'}
+[14.739374] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_258.world\n'}
+[14.757642] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_259.world\n'}
+[14.757883] (-) TimerEvent: {}
+[14.775086] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_26.world\n'}
+[14.794196] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_260.world\n'}
+[14.812207] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_261.world\n'}
+[14.829591] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_262.world\n'}
+[14.849495] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_263.world\n'}
+[14.858004] (-) TimerEvent: {}
+[14.867870] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_264.world\n'}
+[14.888963] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_265.world\n'}
+[14.913896] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_266.world\n'}
+[14.932350] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_267.world\n'}
+[14.952229] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_268.world\n'}
+[14.963595] (-) TimerEvent: {}
+[14.972140] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_269.world\n'}
+[14.989050] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_27.world\n'}
+[15.006165] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_270.world\n'}
+[15.024570] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_271.world\n'}
+[15.040388] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_272.world\n'}
+[15.057670] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_273.world\n'}
+[15.063704] (-) TimerEvent: {}
+[15.074289] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_274.world\n'}
+[15.091184] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_275.world\n'}
+[15.108569] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_276.world\n'}
+[15.137189] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_277.world\n'}
+[15.153811] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_278.world\n'}
+[15.166446] (-) TimerEvent: {}
+[15.174562] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_279.world\n'}
+[15.193473] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_28.world\n'}
+[15.211276] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_280.world\n'}
+[15.230889] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_281.world\n'}
+[15.247968] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_282.world\n'}
+[15.265761] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_283.world\n'}
+[15.267438] (-) TimerEvent: {}
+[15.292073] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_284.world\n'}
+[15.311922] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_285.world\n'}
+[15.332577] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_286.world\n'}
+[15.349843] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_287.world\n'}
+[15.365980] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_288.world\n'}
+[15.367515] (-) TimerEvent: {}
+[15.388498] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_289.world\n'}
+[15.408187] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_29.world\n'}
+[15.425342] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_290.world\n'}
+[15.443475] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_291.world\n'}
+[15.461645] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_292.world\n'}
+[15.467620] (-) TimerEvent: {}
+[15.479957] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_293.world\n'}
+[15.498456] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_294.world\n'}
+[15.517213] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_295.world\n'}
+[15.533880] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_296.world\n'}
+[15.557566] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_297.world\n'}
+[15.567748] (-) TimerEvent: {}
+[15.581174] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_298.world\n'}
+[15.600536] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_299.world\n'}
+[15.618479] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_3.world\n'}
+[15.635677] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_30.world\n'}
+[15.653787] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_31.world\n'}
+[15.668002] (-) TimerEvent: {}
+[15.672800] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_32.world\n'}
+[15.691012] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_33.world\n'}
+[15.710109] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_34.world\n'}
+[15.731978] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_35.world\n'}
+[15.751195] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_36.world\n'}
+[15.768114] (-) TimerEvent: {}
+[15.771049] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_37.world\n'}
+[15.790593] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_38.world\n'}
+[15.809500] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_39.world\n'}
+[15.831335] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_4.world\n'}
+[15.849355] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_40.world\n'}
+[15.866584] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_41.world\n'}
+[15.868185] (-) TimerEvent: {}
+[15.884504] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_42.world\n'}
+[15.902350] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_43.world\n'}
+[15.919572] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_44.world\n'}
+[15.941486] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_45.world\n'}
+[15.960524] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_46.world\n'}
+[15.968320] (-) TimerEvent: {}
+[15.980476] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_47.world\n'}
+[15.999586] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_48.world\n'}
+[16.019706] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_49.world\n'}
+[16.037177] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_5.world\n'}
+[16.054067] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_50.world\n'}
+[16.071483] (-) TimerEvent: {}
+[16.081278] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_51.world\n'}
+[16.106192] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_52.world\n'}
+[16.120122] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_53.world\n'}
+[16.139012] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_54.world\n'}
+[16.155539] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_55.world\n'}
+[16.173238] (-) TimerEvent: {}
+[16.173562] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_56.world\n'}
+[16.192919] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_57.world\n'}
+[16.213866] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_58.world\n'}
+[16.232747] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_59.world\n'}
+[16.250955] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_6.world\n'}
+[16.268278] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_60.world\n'}
+[16.273362] (-) TimerEvent: {}
+[16.286311] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_61.world\n'}
+[16.306996] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_62.world\n'}
+[16.325708] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_63.world\n'}
+[16.342281] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_64.world\n'}
+[16.361736] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_65.world\n'}
+[16.373601] (-) TimerEvent: {}
+[16.380160] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_66.world\n'}
+[16.402608] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_67.world\n'}
+[16.419602] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_68.world\n'}
+[16.438636] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_69.world\n'}
+[16.463616] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_7.world\n'}
+[16.473713] (-) TimerEvent: {}
+[16.481240] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_70.world\n'}
+[16.502588] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_71.world\n'}
+[16.518922] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_72.world\n'}
+[16.536811] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_73.world\n'}
+[16.556122] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_74.world\n'}
+[16.573840] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_75.world\n'}
+[16.574094] (-) TimerEvent: {}
+[16.592137] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_76.world\n'}
+[16.610219] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_77.world\n'}
+[16.628585] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_78.world\n'}
+[16.647119] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_79.world\n'}
+[16.664486] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_8.world\n'}
+[16.675344] (-) TimerEvent: {}
+[16.686132] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_80.world\n'}
+[16.704139] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_81.world\n'}
+[16.723602] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_82.world\n'}
+[16.744189] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_83.world\n'}
+[16.766123] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_84.world\n'}
+[16.775461] (-) TimerEvent: {}
+[16.785777] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_85.world\n'}
+[16.804209] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_86.world\n'}
+[16.822145] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_87.world\n'}
+[16.837625] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_88.world\n'}
+[16.854687] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_89.world\n'}
+[16.872650] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_9.world\n'}
+[16.875561] (-) TimerEvent: {}
+[16.897273] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_90.world\n'}
+[16.916216] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_91.world\n'}
+[16.939939] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_92.world\n'}
+[16.959013] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_93.world\n'}
+[16.974799] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_94.world\n'}
+[16.975638] (-) TimerEvent: {}
+[16.992157] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_95.world\n'}
+[17.008394] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_96.world\n'}
+[17.023688] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_97.world\n'}
+[17.043274] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_98.world\n'}
+[17.063961] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/worlds/BARN/world_99.world\n'}
+[17.075759] (-) TimerEvent: {}
+[17.082581] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/ament_index/resource_index/package_run_dependencies/jackal_helper\n'}
+[17.102660] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/ament_index/resource_index/parent_prefix_path/jackal_helper\n'}
+[17.118480] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/ament_prefix_path.sh\n'}
+[17.135694] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/ament_prefix_path.dsv\n'}
+[17.154562] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/path.sh\n'}
+[17.171181] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/environment/path.dsv\n'}
+[17.175875] (-) TimerEvent: {}
+[17.189834] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/local_setup.bash\n'}
+[17.208839] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/local_setup.sh\n'}
+[17.227972] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/local_setup.zsh\n'}
+[17.245848] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/local_setup.dsv\n'}
+[17.264642] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/package.dsv\n'}
+[17.276010] (-) TimerEvent: {}
+[17.282221] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/ament_index/resource_index/packages/jackal_helper\n'}
+[17.302302] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/cmake/jackal_helperConfig.cmake\n'}
+[17.319110] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/cmake/jackal_helperConfig-version.cmake\n'}
+[17.339221] (jackal_helper) StdoutLine: {'line': b'-- Symlinking: /jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/share/jackal_helper/package.xml\n'}
+[17.376108] (-) TimerEvent: {}
+[17.425604] (jackal_helper) StdoutLine: {'line': b"Listing '/jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper'...\n"}
+[17.425824] (jackal_helper) StdoutLine: {'line': b"Compiling '/jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/__init__.py'...\n"}
+[17.425943] (jackal_helper) StdoutLine: {'line': b"Compiling '/jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/barn_controller.py'...\n"}
+[17.426044] (jackal_helper) StdoutLine: {'line': b"Compiling '/jackal_ws/src/The-Barn-Challenge-Ros2/install/jackal_helper/lib/python3.12/site-packages/jackal_helper/utils.py'...\n"}
+[17.439162] (jackal_helper) CommandEnded: {'returncode': 0}
+[17.477292] (-) TimerEvent: {}
+[17.477712] (jackal_helper) JobEnded: {'identifier': 'jackal_helper', 'rc': 0}
+[17.478944] (-) EventReactorShutdown: {}

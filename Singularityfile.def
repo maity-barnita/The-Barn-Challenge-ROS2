@@ -1,0 +1,49 @@
+Bootstrap: docker
+From: ros:jazzy
+
+%post -c /bin/bash
+    set -e
+
+    apt-get update && apt-get install -y \
+        git \
+        python3-colcon-common-extensions \
+        python3-rosdep \
+        ros-jazzy-ros-gz \
+        libprotobuf-dev \
+        protobuf-compiler
+
+    # Source ROS
+    source /opt/ros/jazzy/setup.bash
+
+    # Create workspace
+    mkdir -p /jackal_ws/src
+    cd /jackal_ws/src
+
+  
+    git clone https://github.com/maity-barnita/The-Barn-Challenge-ROS2.git
+
+    cd /jackal_ws
+
+    # Initialize rosdep (safe if already exists)
+    rosdep init || true
+    rosdep update
+
+    # Install dependencies
+    rosdep install -y --from-paths src --ignore-src
+
+    # Build workspace
+    colcon build
+
+    echo "=== BUILD SUCCESS ==="
+    ls /jackal_ws/install
+
+%environment
+    source /opt/ros/jazzy/setup.bash
+    source /jackal_ws/install/setup.bash
+
+%runscript
+    source /opt/ros/jazzy/setup.bash
+    source /jackal_ws/install/setup.bash
+
+    # Run your pipeline
+    bash /jackal_ws/src/The-Barn-Challenge-ROS2/entrypoint.sh

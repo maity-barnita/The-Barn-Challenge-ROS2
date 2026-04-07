@@ -1,0 +1,210 @@
+import os
+import yaml
+
+from ament_index_python.packages import get_package_share_directory
+
+from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction, SetEnvironmentVariable
+from launch.actions import LogInfo, Shutdown, TimerAction, ExecuteProcess, GroupAction, RegisterEventHandler
+from launch.event_handlers import OnProcessExit
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+
+from launch_ros.actions import Node, SetRemap
+
+from jackal_helper.utils import get_pkg_src_path
+
+"""Launch gz simulation, ros-gz-bridge, jackal, BARN simulation runner, and (rviz2/gz gui) optionally."""
+
+ARGUMENTS = [
+    DeclareLaunchArgument('rviz', default_value='false',
+                          choices=['true', 'false'], description='Start rviz.'),
+    DeclareLaunchArgument('gui', default_value='false',
+                          choices=['true', 'false'], description='Start gazebo gui.'),
+    DeclareLaunchArgument('world_idx', default_value='0',
+                          description='BARN World Index: [0-299].'),
+    DeclareLaunchArgument('setup_path',
+                          default_value=PathJoinSubstitution([get_pkg_src_path(jackal_pkg=True), 'config']),
+                          description='Clearpath setup path. The folder which contains robot.yaml & nav2.yaml.'),
+    DeclareLaunchArgument('out_file',
+                          default_value="out.txt",
+                          description='File name which trial results are stored.'),
+    DeclareLaunchArgument('timeout',
+                          default_value='100',
+                          description='Trial timeout time in seconds.'),
+    DeclareLaunchArgument('throttle_duration',
+                          default_value='1',
+                          description='Time interval in seconds for throttling BARN Runner log messages during a trial. Set to 0 or a negative value to disable logging.')
+]
+
+def parse_world_idx(world_idx:str)->str:
+    world_idx = int(world_idx)
+    if world_idx < 300:  # static environment from 0-299
+        world_name = f"BARN/world_{world_idx}.world"
+        GOAL_DIST = 10
+    elif world_idx < 360:  # Dynamic environment from 300-359
+        world_name = f"DynaBARN/world_{world_idx - 300}.world"
+        GOAL_DIST = 20
+    else:
+        raise ValueError(f"World index {world_idx} does not exist")
+    return world_name, GOAL_DIST
+
+def launch_ros_gazebo(context, *args, **kwargs):
+    pkg_jackal_helper = get_package_share_directory('jackal_helper')
+    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+
+    gz_sim_launch = PathJoinSubstitution([pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py'])
+    gui_config = PathJoinSubstitution([pkg_jackal_helper, 'config', 'gui.config'])
+
+    gui_cmd = "" if LaunchConfiguration('gui').perform(context)=='true' else " -s"
+    world_name = parse_world_idx(LaunchConfiguration("world_idx").perform(context))[0]
+    world_path = os.path.join(pkg_jackal_helper, "worlds", world_name)
+
+    gz_sim = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([gz_sim_launch]),
+        launch_arguments=[
+            ('gz_args', [world_path,
+                        gui_cmd,
+                         ' -r -v 0',
+                         ' --gui-config ',
+                         gui_config]),
+        ]
+    )
+
+    clock_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='clock_bridge',
+        arguments=[
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+            '/world/default/control@ros_gz_interfaces/srv/ControlWorld',
+            '/world/default/set_pose@ros_gz_interfaces/srv/SetEntityPose',
+            '/robot/touched@std_msgs/msg/Bool@gz.msgs.Boolean',
+            '/model/robot/pose@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V',
+            '--ros-args', '--log-level', 'WARN'
+        ],
+        output='screen'
+    )
+
+    return [gz_sim, clock_bridge]
+
+def spawn_jackal(context, *args, **kwargs):
+    spawner_launch_path = PathJoinSubstitution([get_package_share_directory('clearpath_gz'), 'launch', 'robot_spawn.launch.py'])
+
+    world_name = parse_world_idx(LaunchConfiguration('world_idx').perform(context))[0]
+    remap_scan_topic = SetRemap(src='/sensors/lidar2d_0/scan', dst='/front/scan')
+
+    robot_spawn = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([spawner_launch_path]),
+        launch_arguments=[
+            ('use_sim_time', 'true'),
+            ('setup_path', LaunchConfiguration('setup_path')),
+            ('world', world_name),
+            ('rviz', LaunchConfiguration('rviz')),
+            ('generate', 'true'),
+            ('x', '2.0'),
+            ('y', '2.0'),
+            ('z', '0.3')]
+    )
+
+    return [remap_scan_topic, robot_spawn]
+
+def launch_navigation_stack(context, *args, **kwargs):
+    """YOUR custom controller — replaces Nav2 completely."""
+
+    barn_controller_node = Node(
+        package="jackal_helper",
+        executable="/jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper/scripts/barn_controller.py",
+        name="barn_controller",
+        output="screen",
+        parameters=[{"use_sim_time": True}],
+    )
+
+    controller_exit_handler = RegisterEventHandler(
+        OnProcessExit(
+            target_action=barn_controller_node,
+            on_exit=[
+                LogInfo(msg=">>>>>>>>> barn_controller exited. Shutting down..."),
+                Shutdown(),
+            ],
+        )
+    )
+
+    # ── GOAL ──
+    world_idx_str = LaunchConfiguration("world_idx").perform(context)
+    _, GOAL_DIST = parse_world_idx(world_idx_str)
+
+    goal = {
+        "pose": {
+            "header": {"frame_id": "odom"},
+            "pose": {
+                "position": {"x": float(GOAL_DIST), "y": 0.0, "z": 0.0},
+                "orientation": {"w": 1.0},
+            },
+        }
+    }
+    goal_str = yaml.dump(
+        goal, default_flow_style=True, width=float("inf")
+    ).rstrip("\n")
+
+    publish_goal = TimerAction(
+        period=10.0,
+        actions=[
+            LogInfo(msg=">>>>>>>>> Publishing goal to barn_controller..."),
+            ExecuteProcess(
+                cmd=[
+                    "ros2",
+                    "action",
+                    "send_goal",
+                    "/navigate_to_pose",
+                    "nav2_msgs/action/NavigateToPose",
+                    goal_str,
+                ],
+                output="log",
+            ),
+        ],
+    )
+
+    return [barn_controller_node, controller_exit_handler, publish_goal]
+
+
+
+def generate_launch_description():
+
+    set_logging_format = SetEnvironmentVariable(name="RCUTILS_CONSOLE_OUTPUT_FORMAT", value="[{severity}] [{name}]: {message}")
+
+    BARN_runner_node = TimerAction(
+        period=10.0,
+        actions=[
+            LogInfo(msg=">>>>>>>>> Starting BARN Runner node..."),
+            Node(
+                package="jackal_helper",
+                executable="barn_runner.py",
+                output='screen',
+                emulate_tty=True,
+                parameters=[
+                    {'world_idx': LaunchConfiguration('world_idx')},
+                    {'out_file': LaunchConfiguration('out_file')},
+                    {'timeout': LaunchConfiguration('timeout')},
+                    {'logging_throttle_duration_s': LaunchConfiguration('throttle_duration')}
+                    ],
+                on_exit=[
+                    LogInfo(msg=">>>>>>>>> Shutting down in 5 seconds..."),
+                    TimerAction(period=5.0, actions=[Shutdown(), ExecuteProcess(cmd=['pkill', '-9', '-f','\'gz sim\''], shell=True)]),
+                    ],
+            )
+        ]
+    )
+
+    nav_stack = TimerAction(
+        period=15.0,
+        actions=[LogInfo(msg=">>>>>>>>> Launching Nav Stack..."), OpaqueFunction(function=launch_navigation_stack)]
+    )
+
+    ld = LaunchDescription(ARGUMENTS)
+    ld.add_action(set_logging_format)
+    ld.add_action(OpaqueFunction(function=launch_ros_gazebo))
+    ld.add_action(OpaqueFunction(function=spawn_jackal))
+    ld.add_action(BARN_runner_node)
+    ld.add_action(nav_stack)
+    return ld

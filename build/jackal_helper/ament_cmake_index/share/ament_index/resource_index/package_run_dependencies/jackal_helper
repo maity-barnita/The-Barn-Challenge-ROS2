@@ -1,0 +1,1 @@
+rclcpp;rclpy;python3-catkin-pkg;clearpath_common;clearpath_config;clearpath_msgs;clearpath_simulator;std_msgs;nav_msgs;tf2_msgs;ros_gz_interfaces;nav2_bringup;ros2launch
