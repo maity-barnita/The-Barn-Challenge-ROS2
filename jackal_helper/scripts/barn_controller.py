@@ -110,7 +110,7 @@ class BarnController(Node):
         self.DIST_FAR   = 2.0
         self.DIST_CLOSE = 1.0
 
-        self.wz_max = 1.9
+        self.wz_max = 1.0
 
         # ── PASSAGE DETECTION (doc 21 exact) ──
         self.PASSAGE_DIST = 1.2
@@ -792,3 +792,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+# TEST CHANGE

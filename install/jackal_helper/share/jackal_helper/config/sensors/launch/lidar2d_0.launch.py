@@ -1,1 +1,0 @@
-/jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper/config/sensors/launch/lidar2d_0.launch.py

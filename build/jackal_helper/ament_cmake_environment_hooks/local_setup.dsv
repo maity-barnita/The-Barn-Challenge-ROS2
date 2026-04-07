@@ -1,3 +1,0 @@
-source;share/jackal_helper/environment/ament_prefix_path.sh
-source;share/jackal_helper/environment/path.sh
-source;share/jackal_helper/environment/pythonpath.sh

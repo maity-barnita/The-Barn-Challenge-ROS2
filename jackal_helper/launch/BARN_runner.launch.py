@@ -114,7 +114,7 @@ def launch_navigation_stack(context, *args, **kwargs):
 
     barn_controller_node = Node(
         package="jackal_helper",
-        executable="/jackal_ws/src/The-Barn-Challenge-Ros2/jackal_helper/scripts/barn_controller.py",
+        executable="/jackal_ws/src/The-Barn-Challenge-ROS2/jackal_helper/scripts/barn_controller.py",
         name="barn_controller",
         output="screen",
         parameters=[{"use_sim_time": True}],

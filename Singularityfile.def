@@ -12,30 +12,22 @@ From: ros:jazzy
         libprotobuf-dev \
         protobuf-compiler
 
-    # Source ROS
     source /opt/ros/jazzy/setup.bash
 
-    # Create workspace
     mkdir -p /jackal_ws/src
     cd /jackal_ws/src
 
-  
     git clone https://github.com/maity-barnita/The-Barn-Challenge-ROS2.git
 
     cd /jackal_ws
 
-    # Initialize rosdep (safe if already exists)
     rosdep init || true
     rosdep update
 
-    # Install dependencies
-    rosdep install -y --from-paths src --ignore-src
+    
+    rosdep install -y --from-paths src/The-Barn-Challenge-ROS2 --ignore-src
 
-    # Build workspace
-    colcon build
-
-    echo "=== BUILD SUCCESS ==="
-    ls /jackal_ws/install
+    colcon build --base-paths src/The-Barn-Challenge-ROS2
 
 %environment
     source /opt/ros/jazzy/setup.bash
@@ -45,5 +37,4 @@ From: ros:jazzy
     source /opt/ros/jazzy/setup.bash
     source /jackal_ws/install/setup.bash
 
-    # Run your pipeline
     bash /jackal_ws/src/The-Barn-Challenge-ROS2/entrypoint.sh
