@@ -110,7 +110,7 @@ class BarnController(Node):
         self.DIST_FAR   = 2.0
         self.DIST_CLOSE = 1.0
 
-        self.wz_max = 1.0
+        self.wz_max = 1 #1.9
 
         # ── PASSAGE DETECTION (doc 21 exact) ──
         self.PASSAGE_DIST = 1.2
@@ -208,8 +208,13 @@ class BarnController(Node):
         return CancelResponse.ACCEPT
 
     async def execute_goal_callback(self, goal_handle):
-        pose                   = goal_handle.request.pose.pose
-        self.goal              = np.array([pose.position.x, pose.position.y])
+        # ── FIX 1: Read goal directly - NO transformation ──
+        pose = goal_handle.request.pose.pose
+        self.goal = np.array([pose.position.x, pose.position.y])
+        
+        self.get_logger().info(
+            f'🎯 Goal received: x={self.goal[0]:.2f}, y={self.goal[1]:.2f}')
+        
         self.goal_reached      = False
         self.recovery_mode     = False
         self.stuck_timer       = 0.0
@@ -217,9 +222,6 @@ class BarnController(Node):
         self.D_val_smooth      = 1.0
         self.current_gap_angle = None
         self.gap_commit_timer  = 0.0
-
-        self.get_logger().info(
-            f'🎯 Goal: x={self.goal[0]:.2f}, y={self.goal[1]:.2f}')
 
         feedback_msg = NavigateToPose.Feedback()
         while rclpy.ok():
@@ -232,10 +234,12 @@ class BarnController(Node):
             feedback_msg.distance_remaining = dist
             goal_handle.publish_feedback(feedback_msg)
             if self.goal_reached:
+                # ── FIX 2: Clear goal before succeeding ──
+                self.goal = None
                 goal_handle.succeed()
                 return NavigateToPose.Result()
-            await asyncio.get_event_loop().run_in_executor(
-                None, lambda: __import__('time').sleep(0.1))
+            # ── FIX 3: Use proper asyncio.sleep ──
+            await asyncio.sleep(0.1)
         goal_handle.succeed()
         return NavigateToPose.Result()
 
@@ -792,4 +796,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-# TEST CHANGE
