@@ -3,30 +3,25 @@ From: ros:jazzy
 
 %post -c /bin/bash
     set -e
-
     apt-get update && apt-get install -y \
         git \
         python3-colcon-common-extensions \
         python3-rosdep \
         ros-jazzy-ros-gz \
         libprotobuf-dev \
-        protobuf-compiler
-
+        protobuf-compiler \
+        python3-matplotlib \
+        python3-numpy
+    
     source /opt/ros/jazzy/setup.bash
-
     mkdir -p /jackal_ws/src
     cd /jackal_ws/src
-
     git clone https://github.com/maity-barnita/The-Barn-Challenge-ROS2.git
-
     cd /jackal_ws
-
     rosdep init || true
     rosdep update
-
     
     rosdep install -y --from-paths src/The-Barn-Challenge-ROS2 --ignore-src
-
     colcon build --base-paths src/The-Barn-Challenge-ROS2
 
 %environment
@@ -36,5 +31,4 @@ From: ros:jazzy
 %runscript
     source /opt/ros/jazzy/setup.bash
     source /jackal_ws/install/setup.bash
-
     bash /jackal_ws/src/The-Barn-Challenge-ROS2/entrypoint.sh
